@@ -1,0 +1,93 @@
+/* 共通 */
+*{
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+main {
+  width: 50%;
+  margin: 30px auto 0;
+}
+table {
+  text-align: left;
+  border-collapse: separate;
+  border-spacing:20px;
+  margin: 0 auto;
+}
+.form__table {
+  border-spacing:20px;
+}
+.comfirm__table {
+  border-spacing:50px 20px;
+}
+.title {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.required-icon {
+  color: red;
+}
+
+input,textarea {
+  border:solid 1px darkgray;
+  border-radius: 5%;
+}
+.input_example {
+  color:darkgray;
+  font-size: 15px;
+  padding-left: 15px;
+}
+
+.gender-inp {
+  color:darkgray;
+  width: 30px;
+  height: 30px;
+}
+.form__inp-text {
+  width: 100%;
+  height: 40px;
+}
+
+
+.postcode-icon {
+  width: 20%;
+  text-align: center;
+  display: inline-block;
+}
+.form__inp-text2 {
+  width: 80%;
+  height: 40px;
+}
+
+.form__btn {
+  background: black;
+  color: white;
+  padding: 10px 50px;
+  border-radius: 5%;
+  margin: 20px auto ;
+  display: block;
+}
+.fix-btn {
+  text-align: center;
+  display: block;
+  color: black;
+}
+
+.top-redirect__btn {
+  background: black;
+  color: white;
+  padding: 10px 50px;
+  border-radius: 5%;
+  margin: 20px auto ;
+  text-decoration: none;  
+}
+.endpage-container {
+  width: 100%;
+  text-align: center;
+}
+.endpage-container__text {
+  margin-top: 40%;
+  margin-bottom: 50px;
+}
