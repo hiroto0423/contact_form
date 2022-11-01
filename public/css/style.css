@@ -6,7 +6,7 @@ body {
   width: 100%;
 }
 main {
-  width: 50%;
+  max-width: 80%;
   margin: 30px auto 0;
 }
 table {
@@ -90,4 +90,7 @@ input,textarea {
 .endpage-container__text {
   margin-top: 40%;
   margin-bottom: 50px;
+}
+.error-message {
+  color: red;
 }
