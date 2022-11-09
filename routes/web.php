@@ -16,6 +16,9 @@ use App\Http\Controllers\ContactController;
 Route::get('/contact', [ContactController::class,'show']);
 Route::post('/contact/comfirm',[ContactController::class,'comfirm']);
 Route::post('/contact/create',[ContactController::class,'create']);
+Route::post('/contact/delete',[ContactController::class,'delete'])->name('delete');
+Route::get('/management',[ContactController::class,'showManegement']);
+Route::get('/management/serach',[ContactController::class,'serach']);
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/contact');
 });

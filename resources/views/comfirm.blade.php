@@ -7,17 +7,15 @@
     <tbody>
       <tr>
         <th>お名前</th>
-        <td>{{$contact['last_name']}} {{$contact['first_name']}}</td>
+        <td>{{$contact['fullname']}}</td>
       </tr>
       <tr>
         <th>性別</th>
-        <td>
-          @if($contact['gender']=1) 
-            男性
-          @elseif($contact['gender']=2) 
-            女性
-          @endif
-        </td>
+        @if($contact['gender']==1) 
+          <td>男性</td>
+        @elseif($contact['gender']==2) 
+          <td>女性</td>
+        @endif
       </tr>
       <tr>
         <th>メールアドレス</th>
@@ -44,7 +42,7 @@
 
   <form action="/contact/create"method='POST'>
     @csrf
-    <input type="hidden"value={{$contact['last_name']}}{{$contact['first_name']}} name='fullname'>
+    <input type="hidden"value={{$contact['fullname']}} name='fullname'>
     <input type="hidden"value={{$contact['gender']}} name='gender'>
     <input type="hidden"value={{$contact['email']}} name='email'>
     <input type="hidden"value={{$contact['postcode']}} name='postcode'>
